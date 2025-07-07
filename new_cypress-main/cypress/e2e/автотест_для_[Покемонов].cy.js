@@ -4,7 +4,7 @@ it('1. проверка покупки аватара', function () {
         cy.visit('https://pokemonbattle.ru'); // открой сайт 
     cy.get('.style_1_popup_white_in')
     cy.get('.style_1_popup_white_title').contains('Битва покемонов');    
-    cy.get('#k_email').type('grot10875@yandex.ru');
+    cy.get('#k_email').type('USER_LOGIN');
     cy.get('#k_password').type('USER_PASSWORD');
     cy.get('.MuiButton-root').should('be.visible'); 
     cy.get('.MuiButton-root').should('have.css', 'color', 'rgb(255, 255, 255)'); 
